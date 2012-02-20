@@ -29,10 +29,11 @@ PLUGINS = [ 'tags'
           , 'markdown'
           , 'unsupported'
           , 'permissions'
+          , 'heatmap'
           ]
 
 BOOKMARKLET_PATH = 'contrib/bookmarklet'
-BOOKMARKLET_PLUGINS = ['store', 'permissions', 'unsupported', 'tags']
+BOOKMARKLET_PLUGINS = ['store', 'permissions', 'unsupported', 'tags', 'heatmap']
 
 task 'watch', 'Run development source watcher', ->
   run "#{COFFEE} --watch --bare --compile --output #{__dirname}/lib #{__dirname}/src"
